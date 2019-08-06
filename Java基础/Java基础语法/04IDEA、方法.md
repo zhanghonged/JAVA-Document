@@ -468,14 +468,14 @@ public class Method_Demo6 {
 判断哪些方法是重载关系。
 
 ```java
-public static void open(){}
-public static void open(int a){}
-static void open(int a,int b){}
-public static void open(double a,int b){}
-public static void open(int a,double b){}
-public void open(int i,double d){}
-public static void OPEN(){}
-public static void open(int i,int j){}
+public static void open(){}  // 正确重载
+public static void open(int a){}  //正确重载
+static void open(int a,int b){}  //代码错误：和第8行代码冲突，有无public无关系，和参数名称无关系
+public static void open(double a,int b){}  // 正确重载
+public static void open(int a,double b){}  // 代码错误：和第6行代码冲突，有无static无关系
+public void open(int i,double d){}  // 代码错误：和第5行代码冲突
+public static void OPEN(){}  // 代码正确不会报错，但并不是有效重载，方法名称不同
+public static void open(int i,int j){}  //代码错误：和第8行代码冲突
 ```
 
 ### 练习三
