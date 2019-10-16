@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 # 第一章 Object类
 
 ## 1.1 概述
@@ -518,7 +522,7 @@ public class StringDemo {
 
 它的内部拥有一个数组用来存放字符串内容，进行字符串拼接时，直接在数组中加入新内容。StringBuilder会自动维护数组的扩容。原理如下图所示：(默认16字符空间，超过自动扩充)
 
-![12-StringBuilder的原理](images\12_StringBuilder的原理.bmp)
+![12_StringBuilder的原理](images/12_StringBuilder的原理.png)
 
 ## 4.3 构造方法
 
@@ -597,7 +601,7 @@ public class Demo16StringBuilder {
 
 ## 5.1 概述
 
-![12_包装类的概念](images\12_包装类的概念.bmp)
+![12_包装类的概念](images/12_包装类的概念.png)
 
 Java提供了两个类型系统，基本类型与引用类型，使用基本类型在于效率，然而很多情况，会创建对象使用，因为对象可以做更多的功能，如果想要我们的基本类型像对象一样操作，就可以使用基本类型对应的包装类，如下：
 
