@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # 第一章 Object类
 
 ## 1.1 概述
