@@ -6,7 +6,7 @@
 
 我们通过查看`Map`接口描述，发现`Map`接口下的集合与`Collection`接口下的集合，它们存储数据的形式不同，如下图。
 
-![](images\Collection与Map.bmp)
+![Collection与Map](images/Collection与Map.bmp)
 
 * `Collection`中的集合，元素是孤立存在的（理解为单身），向集合中存储元素采用一个个元素的方式存储。
 * `Map`中的集合，元素是成对存在的(理解为夫妻)。每个元素由键与值两部分组成，通过键可以找对所对应的值。
@@ -102,7 +102,7 @@ public class MapDemo01 {
 
 遍历图解：
 
-![](images\Map集合遍历方式一.bmp)
+![Map集合遍历方式一](images/Map集合遍历方式一.bmp)
 
 ## 1.5  Entry键值对对象
 
@@ -154,7 +154,7 @@ public class MapDemo02 {
 
 遍历图解：
 
-![](images\Map集合遍历方式二.bmp)
+![Map集合遍历方式二](images/Map集合遍历方式二.bmp)
 
 > tips：Map集合不能直接使用迭代器或者foreach进行遍历。但是转成Set之后就可以使用了。
 >
@@ -367,61 +367,61 @@ public class HelloJDK9 {
 
 1. 在有效代码行，点击行号右边的空白区域，设置断点，程序执行到断点将停止，我们可以手动来运行程序 	
 
-      ![](images/debug1.png)
+      ![debug1](images/debug1.png)
 
-2. 点击Debug运行模式       ![](images\debug2.png)                                                                                                                                                                      
+2. 点击Debug运行模式       ![debug2](images/debug2.png)                                                                                                                                                                      
 
 3. 程序停止在断点上不再执行，而IDEA最下方打开了Debug调试窗口  
 
-     ![](images\debug3.png)![](images\debug4.png)
+     ![debug3](images/debug3.png)![debug4](images/debug4.png)
 
 4. Debug调试窗口介绍
 
-    ![](images\debug5.png)
+    ![debug5](images/debug5.png)
 
 5. 快捷键F8，代码向下执行一行,第九行执行完毕，执行到第10行（第10行还未执行）
 
-   ![](images\debug6.png)
+   ![debug6](images/debug6.png)
 
 6. 切换到控制台面板，控制台显示 请录入一个字符串： 并且等待键盘录入
 
-   ![](images\debug7.png)
+   ![debug7](images/debug7.png)
 
 7. 快捷键F8，程序继续向后执行，执行键盘录入操作，在控制台录入数据 ababcea
 
-   ![](images\debug8.png)
+   ![debug8](images/debug8.png)
 
-   回车之后效果：![](images\debug9.png)
+   回车之后效果：![debug9](images/debug9.png)
 
-   调试界面效果：![](images\debug10.png)
+   调试界面效果：![debug10](images/debug10.png)
 
 8. 此时到达findChar方法，快捷键F7，进入方法findChar
 
-   ![](images\debug11.png)
+   ![debug11](images/debug11.png)
 
 9. 快捷键F8 接续执行，创建了map对象，变量区域显示
 
-   ![](images\debug12.png)
+   ![debug12](images/debug12.png)
 
 10. 快捷键F8 接续执行，进入到循环中，循环变量i为 0,F8再继续执行，就获取到变量c赋值为字符‘a’ 字节值97
 
-    ![](images\debug13.png)
+    ![debug13](images/debug13.png)
 
 11. 快捷键F8 接续执行，进入到判断语句中，因为该字符 不在Map集合键集中，再按F8执行，进入该判断中
 
-     ![](images\debug14.png)
+     ![debug14](images/debug14.png)
 
 12. 快捷键F8 接续执行，循环结束，进入下次循环，此时map中已经添加一对儿元素
 
-     ![](images\debug15.png)
+     ![debug15](images/debug15.png)
 
 13. 快捷键F8 接续执行，进入下次循环，再继续上面的操作，我们就可以看到代码每次是如何执行的了
 
-     ![](images\debug16.png)
+     ![debug16](images/debug16.png)
 
 14. 如果不想继续debug,那么可以使用快捷键F9,程序正常执行到结束，程序结果在控制台显示
 
-     ![](images\debug17.png)
+     ![debug17](images/debug17.png)
 
 # 第三章  模拟斗地主洗牌发牌
 
@@ -429,7 +429,7 @@ public class HelloJDK9 {
 
 按照斗地主的规则，完成洗牌发牌的动作。
 
-![](images\斗地主.png)
+![斗地主](images/斗地主.png)
 
 具体规则：
 
@@ -468,7 +468,7 @@ public class HelloJDK9 {
 
 通过查询纸牌与数字的对应关系，由数字转成纸牌字符串再进行展示。
 
-![](images\斗地主分析.png)
+![斗地主分析](images/斗地主分析.png)
 
 ## 3.3  实现代码步骤
 

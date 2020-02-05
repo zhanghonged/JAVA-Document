@@ -21,7 +21,7 @@ JAVASE提供了满足各种需求的API，在使用这些API前，先了解其�
 
 从上面的描述可以看出JDK中提供了丰富的集合类库，为了便于初学者进行系统地学习，接下来通过一张图来描述整个集合类的继承体系。
 
-![](images\Collection集合体系图.png)
+![Collection集合体系图](images/Collection集合体系图.png)
 
 集合本身是一个工具，它存放在java.util包中。在`Collection`接口定义着单列集合框架中最最共性的内容。
 
@@ -136,7 +136,7 @@ public class IteratorDemo {
 
 Iterator迭代器对象在遍历集合时，内部采用指针的方式来跟踪集合中的元素，为了让初学者能更好地理解迭代器的工作原理，接下来通过一个图例来演示Iterator对象迭代元素的过程：
 
-![](images\迭代器原理图.bmp)
+![迭代器原理图](images/迭代器原理图.bmp)
 
 在调用Iterator的next方法之前，迭代器的索引位于第一个元素之前，不指向任何元素，当第一次调用迭代器的next方法后，迭代器的索引会向后移动一位，指向第一个元素并将该元素返回，当再次调用next方法时，迭代器的索引会指向第二个元素并将该元素返回，依此类推，直到hasNext方法返回false，表示到达了集合的末尾，终止对元素的遍历。
 
@@ -218,7 +218,7 @@ public class GenericDemo {
 
 * **泛型**：可以在类或方法中预支地使用未知的类型。
 
-![](images\泛型的概念.bmp)
+![泛型的概念](images/泛型的概念.bmp)
 
 > tips:一般在创建对象时，将未知的类型确定具体的类型。当没有指定泛型时，默认类型为Object类型。
 
@@ -544,7 +544,7 @@ public static void getElement2(Collection<? super Number> coll){}
   直接打印每个集合。
   
 
-![](images\斗地主案例的需求分析.bmp)
+![斗地主案例的需求分析](images/斗地主案例的需求分析.bmp)
 
 ## 4.3 代码实现
 
